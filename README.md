@@ -34,10 +34,10 @@ Para instalar y configurar el proyecto:
 4. Listo! 
 
 ### Demos 😎
-```
+
 Puedes probar/testear el proyecto en el siguiente link:
-[Demo](link)
-```
+* [Demo](https://api-text-analytics.herokuapp.com/)
+
 
 ### Estructura del proyecto 📦
 Integraremos cuatro servicios de análisis de texto:  
@@ -58,7 +58,7 @@ Identifique y categorice las entidades en su texto como personas, lugares, organ
 
 * [Microsoft Azure](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview) - Nuestro servicio de Cloud Computing
 * [Node JS](https://nodejs.org/es/) - Entorno para el backend de la API
-* [Heroku](https://ww) - El hosting de nuestro proyecto
+* [Heroku](https://www.heroku.com/) - El hosting de nuestro proyecto
 
 
 ## Versionado 📌
