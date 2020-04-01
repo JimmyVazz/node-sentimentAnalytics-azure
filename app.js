@@ -53,6 +53,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
-
+const textAnalytics = require('./routes/textAnalytics')
+app.use('/api/v1', textAnalytics)
 
 module.exports = app;
