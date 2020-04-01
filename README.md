@@ -1,6 +1,6 @@
 
-# Plantilla para registro de la documentación de proyectos de sistemas en Solvento MX  
-Plantilla tipo README para mostrar la documentación de distintos proyectos o desarrollos que se hagan en solvento sistemas
+# Analisis de sentimientos en texto con Microsoft Azure Cognitive Services  
+
 
 ## Comenzando 🚀
 
