@@ -1,57 +1,64 @@
 
-# Analisis de sentimientos en texto con Microsoft Azure Cognitive Services  
-
+# Análisis de sentimientos en texto con Microsoft Azure Cognitive Services  
+La API de análisis de texto es un servicio basado en la nube que proporciona un procesamiento avanzado del lenguaje natural sobre el texto en bruto, e incluye cuatro funciones principales: análisis de sentimientos, extracción de frases clave, detección de lenguaje y reconocimiento de entidades con nombre.
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+**Este proyecto integra Microsoft Cognitive Services con Node JS para ofrecer una API Rest de análisis de sentimientos en texto**
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
 
-Para correr la app necesitas:
+Para correr/modificar el proyecto necesitas:
 
 ```
--MySQL instalado en versión 5 o más actual
--PHP instalado en versión 7 o más actual
--Apache web server, cualquier versión
--O XAMPP, WAMPP que tienen todo este stack
--Node JS instalado en versión 9 mínimo
+-Cuenta vigente de Microsoft Azure 
+-Node JS en versión 9.0 o superior
+-VSCode o tu editor de código favorito
+-Postman 
+-Git 
 ```
 
 ### Instalación 🔧
 
-Para instalar y configurar la app:
-```
--Abre una consola, muevete al directorio del proyecto y entra a /app/, dentro de app corre:
-    npm install    
-```
-```
--Dentro de app para iniciar la app corre:
-    npm start
-```
+Para instalar y configurar el proyecto:
+
+1. Clona el proyecto en tu computadora.
+2. Dentro de la consola, muévete al directorio clonado e instala las dependencias de node corriendo: $ npm install
+3. Abre el proyecto en tu editor de código favorito
+4. Crea las variables de entorno, creando un archivo  .env
+4. Listo! 
 
 ### Demos 😎
 ```
--Aqui van los links a los demos del proyecto
+Puedes probar/testear el proyecto en el siguiente link:
+[Demo](link)
 ```
 
-### Deployment 📦
+### Estructura del proyecto 📦
+Integraremos cuatro servicios de análisis de texto:  
+1. **Análisis de los sentimientos**
+Use el análisis de sentimiento para averiguar lo que los clientes piensan de su marca o tema, analizando el texto en bruto en busca de pistas sobre el sentimiento positivo o negativo. Esta API devuelve una puntuación de sentimiento entre 0 y 1 para cada documento, donde 1 es el más positivo.
+Los modelos de análisis se entrenan previamente mediante un extenso cuerpo de texto y tecnologías de lenguaje natural de Microsoft. En el caso de los idiomas seleccionados, la API puede analizar y puntuar cualquier texto sin procesar que proporcione, devolviendo directamente los resultados a la aplicación de llamada.
 
-```
--Crear cuenta en [000Webhost](https://www.000webhost.com/)
-```
+2. **Extracción de frases clave**
+Extraer automáticamente frases clave para identificar rápidamente los puntos principales. Por ejemplo, para el texto de entrada "La comida era deliciosa y había un personal maravilloso", el API devuelve los principales puntos de conversación: "la comida" y "el personal maravilloso".
+
+3. **Detección del lenguaje**
+Se puede detectar en qué idioma está escrito el texto de entrada e informar de un código de idioma único para cada documento presentado a petición en una amplia gama de idiomas, variantes, dialectos y algunos idiomas regionales/culturales. El código de idioma se empareja con una puntuación que indica la fuerza de la puntuación.
+
+4. **Reconocimiento de la entidad nombrada**
+Identifique y categorice las entidades en su texto como personas, lugares, organizaciones, fecha/hora, cantidades, porcentajes, monedas y más. Las entidades bien conocidas también se reconocen y se vinculan a más información en la web.
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [React JS](https://es.reactjs.org/) - Librería para el frontend de nuestra app
-* [PHP 7](https://www.php.net/downloads.php) - Lenguaje para el backend de la API
-* [Apache Web Server](https://httpd.apache.org/download.cgi) - Nuestro servidor web
-* [MySQL 5](https://dev.mysql.com/downloads/mysql/) - Nuestro manejador de BS relacionales
+* [Microsoft Azure](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview) - Nuestro servicio de Cloud Computing
+* [Node JS](https://nodejs.org/es/) - Entorno para el backend de la API
+* [Heroku](https://ww) - El hosting de nuestro proyecto
 
 
 ## Versionado 📌
@@ -68,4 +75,4 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 Este proyecto está bajo la Licencia (MIT LICENCE) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 
-⌨️ con ❤️ por [JimmyVazz](https://github.com/JimmyVazz/) 😊 para Solvento MX
+⌨️ con ❤️ por [JimmyVazz](https://github.com/JimmyVazz/) 😊 para la comunidad
