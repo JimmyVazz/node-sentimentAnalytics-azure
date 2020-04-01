@@ -53,6 +53,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+//Importamos las rutas de azure 
 const textAnalytics = require('./routes/textAnalytics')
 app.use('/api/v1', textAnalytics)
 
